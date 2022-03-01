@@ -6,27 +6,27 @@
                 <div class="panel-heading">
                     <div class="row">
                     <div class="col-md-6">
-                    Order Details
+                   Details Commande
                 </div>
                 <div class="col-md-6">
-                    <a href="<?php echo e(route('user.orders')); ?>" class="btn btn-success pull-right">All Orders</a>
+                    <a href="<?php echo e(route('user.orders')); ?>" class="btn btn-success pull-right">Toutes les commandes</a>
                 </div>
             </div>
                 </div>
                 <div class="panel-body">
                     <table class="table">
                       <tr>
-                          <th>Order Id</th>
+                          <th>Commande Id</th>
                           <td><?php echo e($order->id); ?></td>
-                          <th>Order Date</th>
+                          <th> Date de commande</th>
                           <td><?php echo e($order->created_at); ?></td>
                           <th>Status</th>
                           <td><?php echo e($order->status); ?></td>
                           <?php if($order->status == "delivered"): ?>
-                          <th>Delivery Date</th>
+                          <th>Date de livraison</th>
                           <td><?php echo e($order->delivered_date); ?></td>
                           <?php elseif($order->status == "canceled"): ?>
-                          <th>Cancellation Date</th>
+                          <th>Date d'annulation</th>
                           <td><?php echo e($order->canceled_date); ?></td>
                           <?php endif; ?>
                       </tr>
@@ -41,10 +41,10 @@
                 <div class="panel-heading">
                     <div class="row">
                     <div class="col-md-6">
-                    Ordered Items
+                    Produits commandés
                 </div>
                 <div class="col-md-6">
-                    <a href="<?php echo e(route('user.orders')); ?>" class="btn btn-success pull-right">All Orders</a>
+                    <a href="<?php echo e(route('user.orders')); ?>" class="btn btn-success pull-right">Toutes les commandes</a>
                 </div>
             </div>
                 </div>
@@ -52,7 +52,7 @@
                     <div class="wrap-iten-in-cart">
                         
                         
-                        <h3 class="box-title">Products Name</h3>
+                        <h3 class="box-title">Nom du produit</h3>
                         <ul class="products-cart">
                             <?php $__currentLoopData = $order->orderItems; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <li class="pr-cart-item">
@@ -73,10 +73,10 @@
                     </div>
                     <div class="summary">
                         <div class="order-summary">
-                            <h4 class="title-box">Order Summary</h4>
-                            <p class="summary-info"><span class="title">Subtotal</span><b class="index">$<?php echo e($order->subtotal); ?></b></p>
+                            <h4 class="title-box">Recapitulatif de la commande</h4>
+                            <p class="summary-info"><span class="title">Total</span><b class="index">$<?php echo e($order->subtotal); ?></b></p>
                             <p class="summary-info"><span class="title">Tax</span><b class="index">$<?php echo e($order->tax); ?></b></p>
-                            <p class="summary-info"><span class="title">Shipping</span><b class="index">Free Shipping</b></p>
+                            <p class="summary-info"><span class="title">Livraison</span><b class="index">Livraison gratuite</b></p>
                             <p class="summary-info"><span class="title">Total</span><b class="index">$<?php echo e($order->total); ?></b></p>
 
 

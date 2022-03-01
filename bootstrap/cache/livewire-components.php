@@ -26,9 +26,11 @@
   'search-component' => 'App\\Http\\Livewire\\SearchComponent',
   'shop-component' => 'App\\Http\\Livewire\\ShopComponent',
   'thankyou-component' => 'App\\Http\\Livewire\\ThankyouComponent',
+  'user.user-change-password-component' => 'App\\Http\\Livewire\\User\\UserChangePasswordComponent',
   'user.user-dashboard-component' => 'App\\Http\\Livewire\\User\\UserDashboardComponent',
   'user.user-order-details-component' => 'App\\Http\\Livewire\\User\\UserOrderDetailsComponent',
   'user.user-orders-component' => 'App\\Http\\Livewire\\User\\UserOrdersComponent',
+  'user.user-review-component' => 'App\\Http\\Livewire\\User\\UserReviewComponent',
   'wishlist-component' => 'App\\Http\\Livewire\\WishlistComponent',
   'wishlist-count-component' => 'App\\Http\\Livewire\\WishlistCountComponent',
 );

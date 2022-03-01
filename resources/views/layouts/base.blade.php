@@ -134,6 +134,9 @@
 										<li class="menu-item" >
 											<a title="My orders" href="{{route('user.orders')}}">Ma commande</a>
 										</li>
+										<li class="menu-item" >
+											<a title="My orders" href="{{route('user.changepassword')}}">Changer de Mot de Passe</a>
+										</li>
 										<li class="menu-item">
 											<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
 										</li>
@@ -421,7 +424,7 @@
 								<li class="menu-item"><a href="privacy-policy.html" class="link-term">Politique de confidentialité</a></li>
 								<li class="menu-item"><a href="terms-conditions.html" class="link-term">Termes et conditions</a></li>
 								<li class="menu-item"><a href="return-policy.html" class="link-term">Politique de retour</a></li>								
-							</ul>
+							</ul> 
 						</div>
 					</div>
 					<div class="clearfix"></div>

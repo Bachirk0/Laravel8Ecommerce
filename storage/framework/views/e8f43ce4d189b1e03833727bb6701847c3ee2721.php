@@ -135,6 +135,9 @@
 										<li class="menu-item" >
 											<a title="My orders" href="<?php echo e(route('user.orders')); ?>">Ma commande</a>
 										</li>
+										<li class="menu-item" >
+											<a title="My orders" href="<?php echo e(route('user.changepassword')); ?>">Changer de Mot de Passe</a>
+										</li>
 										<li class="menu-item">
 											<a href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
 										</li>
@@ -164,15 +167,15 @@
 						<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('header-search-component')->html();
-} elseif ($_instance->childHasBeenRendered('0Ru1OHP')) {
-    $componentId = $_instance->getRenderedChildComponentId('0Ru1OHP');
-    $componentTag = $_instance->getRenderedChildComponentTagName('0Ru1OHP');
+} elseif ($_instance->childHasBeenRendered('AwNZpyP')) {
+    $componentId = $_instance->getRenderedChildComponentId('AwNZpyP');
+    $componentTag = $_instance->getRenderedChildComponentTagName('AwNZpyP');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('0Ru1OHP');
+    $_instance->preserveRenderedChild('AwNZpyP');
 } else {
     $response = \Livewire\Livewire::mount('header-search-component');
     $html = $response->html();
-    $_instance->logRenderedChild('0Ru1OHP', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('AwNZpyP', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -181,15 +184,15 @@ echo $html;
 							<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('wishlist-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('R8yEJ0f')) {
-    $componentId = $_instance->getRenderedChildComponentId('R8yEJ0f');
-    $componentTag = $_instance->getRenderedChildComponentTagName('R8yEJ0f');
+} elseif ($_instance->childHasBeenRendered('R9tjNoJ')) {
+    $componentId = $_instance->getRenderedChildComponentId('R9tjNoJ');
+    $componentTag = $_instance->getRenderedChildComponentTagName('R9tjNoJ');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('R8yEJ0f');
+    $_instance->preserveRenderedChild('R9tjNoJ');
 } else {
     $response = \Livewire\Livewire::mount('wishlist-count-component');
     $html = $response->html();
-    $_instance->logRenderedChild('R8yEJ0f', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('R9tjNoJ', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -197,15 +200,15 @@ echo $html;
 							<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('cart-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('XBcbb89')) {
-    $componentId = $_instance->getRenderedChildComponentId('XBcbb89');
-    $componentTag = $_instance->getRenderedChildComponentTagName('XBcbb89');
+} elseif ($_instance->childHasBeenRendered('IOYyZtC')) {
+    $componentId = $_instance->getRenderedChildComponentId('IOYyZtC');
+    $componentTag = $_instance->getRenderedChildComponentTagName('IOYyZtC');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('XBcbb89');
+    $_instance->preserveRenderedChild('IOYyZtC');
 } else {
     $response = \Livewire\Livewire::mount('cart-count-component');
     $html = $response->html();
-    $_instance->logRenderedChild('XBcbb89', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('IOYyZtC', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -465,7 +468,7 @@ echo $html;
 								<li class="menu-item"><a href="privacy-policy.html" class="link-term">Politique de confidentialité</a></li>
 								<li class="menu-item"><a href="terms-conditions.html" class="link-term">Termes et conditions</a></li>
 								<li class="menu-item"><a href="return-policy.html" class="link-term">Politique de retour</a></li>								
-							</ul>
+							</ul> 
 						</div>
 					</div>
 					<div class="clearfix"></div>

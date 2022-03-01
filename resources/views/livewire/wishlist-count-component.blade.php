@@ -6,7 +6,7 @@
                 @if(Cart::instance('wishlist')->count() > 0)
                 <span class="index">{{Cart::instance('wishlist')->count()}} item</span>
                  @endif
-                <span class="title">Liste des souhaits</span>
+                <span class="title">wishlist</span>
             </div>
         </a>
     </div>

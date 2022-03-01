@@ -63,10 +63,13 @@
                                        <h5>{{$item->quantity}}</h5>
                                     </div>
                                     <div class="price-field sub-total"><p class="price">${{$item->price*$item->quantity}}</p></div>
-                                </li>
+                                    @if($order->status == 'delivered' && $item->status ==false)
+                                         <div class="price-field sub-total"><p class="price"><a href="{{route('user.review',['order_item_id'=>$item->id])}}"> Ecrire un commentaire</a></p></div>
+                                    @endif
+                                </li> 
                                 @endforeach	
                             </ul>
-                        </div>
+                        </div> 
                         <div class="summary">
                             <div class="order-summary">
                                 <h4 class="title-box">Recapitulatif Commande</h4>

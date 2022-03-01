@@ -6,10 +6,10 @@
                    <div class="panel-heading">
                        <div class="row">
                        <div class="col-md-6">
-                         Add new product
+                         Ajouter un produit
                        </div>
                        <div class="col-md-6"> 
-                           <a href="<?php echo e(route('admin.products')); ?>" class="btn btn-success pull-right">All Products</a>
+                           <a href="<?php echo e(route('admin.products')); ?>" class="btn btn-success pull-right">Tout les produits</a>
                        </div>
                        </div>
                    </div>
@@ -19,7 +19,7 @@
                        <?php endif; ?>
                        <form class="form-horizontal" enctype="multipart/form-data" wire:submit.prevent="addProduct">
                            <div class="form-group">
-                               <label class="col-md-4 control-label">Product Name</label>
+                               <label class="col-md-4 control-label">Nom du produit</label>
                                <div class="col-md-4">
                                    <input type="text" placeholder="Product Name" class="form-control input-md" wire:model="name" wire:keyup="generateSlug" />
                                    <?php $__errorArgs = ['name'];
@@ -36,7 +36,7 @@ unset($__errorArgs, $__bag); ?>
                            
 
                            <div class="form-group">
-                               <label class="col-md-4 control-label">Product Slug</label>
+                               <label class="col-md-4 control-label">Produit Slug</label>
                                <div class="col-md-4">
                                    <input type="text" placeholder="Product Slug" class="form-control input-md" wire:model="slug"/>
                                    <?php $__errorArgs = ['slug'];
@@ -53,7 +53,7 @@ unset($__errorArgs, $__bag); ?>
                            
                            
                            <div class="form-group">
-                               <label class="col-md-4 control-label">Short Description</label>
+                               <label class="col-md-4 control-label">Courte Description</label>
                                <div class="col-md-4" wire:ignore>
                                    <textarea class="form-control" id="short_description" placeholder="Short description" wire:model="short_description"></textarea>
                                    <?php $__errorArgs = ['short_description'];
@@ -85,7 +85,7 @@ unset($__errorArgs, $__bag); ?>
                            </div>
 
                            <div class="form-group">
-                               <label class="col-md-4 control-label">Regular price</label>
+                               <label class="col-md-4 control-label">Prix habituel </label>
                                <div class="col-md-4">
                                    <input type="text" placeholder="Regular price" class="form-control input-md" wire:model="regular_price"/>
                                    <?php $__errorArgs = ['regular_price'];
@@ -101,7 +101,7 @@ unset($__errorArgs, $__bag); ?>
                            </div>
 
                            <div class="form-group">
-                               <label class="col-md-4 control-label">Sale Price</label>
+                               <label class="col-md-4 control-label">Prix de vente</label>
                                <div class="col-md-4">
                                    <input type="text" placeholder="Sale price" class="form-control input-md" wire:model="sale_price"/>
                                    <?php $__errorArgs = ['sale_price'];
@@ -136,8 +136,8 @@ unset($__errorArgs, $__bag); ?>
                                <label class="col-md-4 control-label">Stock</label>
                                <div class="col-md-4">
                                    <select class="form-control" wire:model="stock_status">
-                                       <option value="instock">In Stock</option>
-                                       <option value="outofstock">Out of Stock</option>
+                                       <option value="instock">En Stock</option>
+                                       <option value="outofstock">Plus en Stock</option>
                                    </select>
                                    <?php $__errorArgs = ['stock_status'];
 $__bag = $errors->getBag($__errorArgs[1] ?? 'default');
@@ -152,17 +152,17 @@ unset($__errorArgs, $__bag); ?>
                            </div>
 
                            <div class="form-group">
-                               <label class="col-md-4 control-label">Featured</label>
+                               <label class="col-md-4 control-label">En vedette</label>
                                <div class="col-md-4">
                                    <select class="form-control" wire:model="featured">
-                                       <option value="0">No</option>
-                                       <option value="1">Yes</option>
+                                       <option value="0">Non</option>
+                                       <option value="1">Oui</option>
                                    </select>
                                </div>
                            </div>
 
                            <div class="form-group">
-                               <label class="col-md-4 control-label">Quantity</label>
+                               <label class="col-md-4 control-label">Quantité</label>
                                <div class="col-md-4">
                                    <input type="text" placeholder="Quantity" class="form-control input-md" wire:model="quantity"/>
                                    <?php $__errorArgs = ['quantity'];
@@ -178,7 +178,7 @@ unset($__errorArgs, $__bag); ?>
                            </div>
 
                            <div class="form-group">
-                               <label class="col-md-4 control-label" >Product image</label>
+                               <label class="col-md-4 control-label" >Image du produit</label>
                                <div class="col-md-4">
                                    <input type="file"  class="input-file"wire:model="image"/>
                                    <?php $__errorArgs = ['image'];
@@ -199,10 +199,10 @@ unset($__errorArgs, $__bag); ?>
 
 
                            <div class="form-group">
-                               <label class="col-md-4 control-label" >Category</label>
+                               <label class="col-md-4 control-label" >Categorie</label>
                                <div class="col-md-4">
                                    <select class="form-control" wire:model="category_id">
-                                       <option value="">Select Category</option>
+                                       <option value="">Selectionner Categorie</option>
                                        <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                        <option value="<?php echo e($category->id); ?>"><?php echo e($category->name); ?></option>
                                        <?php $__errorArgs = ['category_id'];
@@ -223,7 +223,7 @@ unset($__errorArgs, $__bag); ?>
                            <div class="form-group">
                                <label class="col-md-4 control-label"></label>
                                <div class="col-md-4">
-                                   <button type="submit" class="btn btn-primary">Submit</button>
+                                   <button type="submit" class="btn btn-primary">Valider</button>
                                </div>
                            </div>
 

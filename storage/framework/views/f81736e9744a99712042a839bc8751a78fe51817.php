@@ -6,7 +6,7 @@
                 <?php if(Cart::instance('wishlist')->count() > 0): ?>
                 <span class="index"><?php echo e(Cart::instance('wishlist')->count()); ?> item</span>
                  <?php endif; ?>
-                <span class="title">Liste des souhaits</span>
+                <span class="title">wishlist</span>
             </div>
         </a>
     </div><?php /**PATH /home/bachir/laravel8ecommerce/resources/views/livewire/wishlist-count-component.blade.php ENDPATH**/ ?>

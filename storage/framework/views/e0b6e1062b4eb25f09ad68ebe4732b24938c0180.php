@@ -4,7 +4,7 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Manage home categories
+                Gerer les categories
             </div>
             <div class="panel-body">
                 <?php if(Session::has('message')): ?>
@@ -12,7 +12,7 @@
                 <?php endif; ?>
                 <form class="form-horizontal"wire:submit.prevent="updateHomeCategory">
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Choose Categories</label>
+                        <label class="col-md-4 control-label">Choisir les Categories</label>
                            <div class="col-md-4" wire:ignore>
                                <select class="sel_categories form-control" name="categories[]" multiple="multiple" wire:model="selected_categories">
                                    <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -24,7 +24,7 @@
                     
 
                         <div class="form-group">
-                            <label class="col-md-4 control-label">No of products</label>
+                            <label class="col-md-4 control-label">Numero du produit</label>
                                <div class="col-md-4">
                                    <input type="text" class="form-control input-md" wire:model="numberofproducts"/>
                                </div>
@@ -33,7 +33,7 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label"></label>
                                <div class="col-md-4">
-                                   <button type="submit" class="btn btn-primary">Save</button>
+                                   <button type="submit" class="btn btn-primary">Enregistrer</button>
                                </div>
                         </div>
                 </form>
