@@ -17,8 +17,8 @@ class HomeComponent extends Component
         $sliders= HomeSlider::where('status',1)->get();
         $lproducts= Product::orderBy('created_at', 'DESC')->get()->take(8);
         $category= HomeCategory::find(1);
-        $cats=$category;
-        $categories= Category::whereIn('id',$cats)->get();
+        
+        $categories= Category::find(1);
         $no_of_products= $category->no_of_prooducts;
         $sproducts= Product::where('sale_price','>',0)->inRandomOrder()->get()->take(8);
         $sale= Sale::find(1);
