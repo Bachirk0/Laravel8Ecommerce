@@ -107,12 +107,12 @@
 				<div class="wrap-products">
 					<div class="wrap-product-tab tab-style-1">
 						<div class="tab-control">
-							@foreach($categories as $key=>$category)
+							
 							<a href="#category_{{$category->id}}" class="tab-control-item {{$key==0 ? 'active' :''}}">{{$category->name}}</a>
-							@endforeach
+						
 						</div>
 						<div class="tab-contents">
-							@foreach($categories as $category)
+							
 							<div class="tab-content-item {{$key==0 ? 'active' :''}}" id="category_{{$category->id}}">
 								<div class="wrap-products slide-carousel owl-carousel style-nav-1 equal-container" data-items="5" data-loop="false" data-nav="true" data-dots="false" data-responsive='{"0":{"items":"1"},"480":{"items":"2"},"768":{"items":"3"},"992":{"items":"4"},"1200":{"items":"5"}}' >  
 								   @php
@@ -131,7 +131,7 @@
 											<div class="wrap-price"><span class="product-price">${{$c_product->regular_price}}</span></div>
 										</div>
 									</div>
-									@endforeach
+									
                                   @endforeach
 									
 								</div>
