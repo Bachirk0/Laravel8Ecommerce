@@ -17,8 +17,8 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->text('short_description', 255)->nullable();
-            $table->text('description');
+            $table->text('short_description')->nullable();
+            $table->text('description', 255);
             $table->decimal('regular_price');
             $table->decimal('sale_price')->nullable();
             $table->string('SKU');
@@ -29,7 +29,7 @@ class CreateProductsTable extends Migration
             $table->text('images')->nullable();
             $table->bigInteger('category_id')->unsigned()->nullable();
             $table->timestamps();
-            //$table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
         });
     }
 
