@@ -6,10 +6,10 @@
               <div class="panel-heading">
                   <div class="row">
                       <div class="col-md-6">
-                          Add new Slide
+                          Ajouter un nouveau Slide
                       </div>
                       <div class="col-md-6">
-                          <a href="<?php echo e(route('admin.homeslider')); ?>" class="btn btn-success pull-right">All Slides</a>
+                          <a href="<?php echo e(route('admin.homeslider')); ?>" class="btn btn-success pull-right">Slides</a>
                       </div>
                   </div>
               </div>
@@ -19,14 +19,14 @@
                   <?php endif; ?>
                   <form class="form-horizontal" wire:submit.prevent="addSlide">
                    <div class="form-group">
-                       <label class="col-md-4 control-label">Title</label>
+                       <label class="col-md-4 control-label">Titre</label>
                        <div class="col-md-4">
                            <input type="text" placeholder="Title" class="form-control input-md" wire:model="title"/>
                        </div>
                    </div>
 
                    <div class="form-group">
-                    <label class="col-md-4 control-label">Subtitle</label>
+                    <label class="col-md-4 control-label">Sous titre</label>
                     <div class="col-md-4">
                         <input type="text" placeholder="Subtitle" class="form-control input-md" wire:model="subtitle"/>
                     </div>
@@ -34,7 +34,7 @@
 
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Price</label>
+                    <label class="col-md-4 control-label">Prix</label>
                     <div class="col-md-4">
                         <input type="text" placeholder="Price" class="form-control input-md"wire:model="price"/>
                     </div>
@@ -42,7 +42,7 @@
 
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Link</label>
+                    <label class="col-md-4 control-label">Lien</label>
                     <div class="col-md-4">
                         <input type="text" placeholder="Link" class="form-control input-md"wire:model="link"/>
                     </div>
@@ -73,7 +73,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Valider</button>
                     </div>
                 </div>
 

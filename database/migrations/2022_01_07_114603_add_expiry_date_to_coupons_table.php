@@ -16,7 +16,7 @@ class AddExpiryDateToCouponsTable extends Migration
     public function up()
     {
         Schema::table('coupons', function (Blueprint $table) {
-            $table->date('expiry_date')->default(Carbon::now()) ;
+            $table->date('expiry_date')->default(Carbon::now());
 
         });
     }
@@ -29,7 +29,7 @@ class AddExpiryDateToCouponsTable extends Migration
     public function down()
     {
         Schema::table('coupons', function (Blueprint $table) {
-            $table->date('expiry_date')->default(Carbon::now()) ;
+            $table->date('expiry_date')->default(Carbon::now());
 
         });
     }

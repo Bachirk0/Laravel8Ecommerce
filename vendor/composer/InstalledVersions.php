@@ -30,7 +30,7 @@ class InstalledVersions
     'aliases' => 
     array (
     ),
-    'reference' => '5a60bf39f04d3a7f7e095c25922aeeeb3976813e',
+    'reference' => 'be42dc2cba8486aa3723294afd12c10da3d4d7be',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -541,7 +541,7 @@ class InstalledVersions
       'aliases' => 
       array (
       ),
-      'reference' => '5a60bf39f04d3a7f7e095c25922aeeeb3976813e',
+      'reference' => 'be42dc2cba8486aa3723294afd12c10da3d4d7be',
     ),
     'laravel/sail' => 
     array (

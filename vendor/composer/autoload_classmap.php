@@ -27,7 +27,6 @@ return array(
     'App\\Http\\Livewire\\Admin\\AdminEditCouponComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminEditCouponComponent.php',
     'App\\Http\\Livewire\\Admin\\AdminEditHomeSliderComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminEditHomeSliderComponent.php',
     'App\\Http\\Livewire\\Admin\\AdminEditProductComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminEditProductComponent.php',
-    'App\\Http\\Livewire\\Admin\\AdminHomeCategoryComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminHomeCategoryComponent.php',
     'App\\Http\\Livewire\\Admin\\AdminHomeSliderComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminHomeSliderComponent.php',
     'App\\Http\\Livewire\\Admin\\AdminOrderComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminOrderComponent.php',
     'App\\Http\\Livewire\\Admin\\AdminOrderDetailsComponent' => $baseDir . '/app/Http/Livewire/Admin/AdminOrderDetailsComponent.php',
