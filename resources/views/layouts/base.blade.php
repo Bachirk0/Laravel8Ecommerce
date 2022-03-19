@@ -115,6 +115,10 @@
 										</li> 
 
 										<li class="menu-item">
+											<a title="Contact Messages"href="{{route('admin.contact')}}">Contact Messages</a>
+										</li> 
+
+										<li class="menu-item">
 											<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
 										</li>
 										
@@ -214,7 +218,7 @@
 									<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
 								</li>
 								<li class="menu-item">
-									<a href="contact-us.html" class="link-term mercado-item-title">Contacter nous</a>
+									<a href="/contact-us" class="link-term mercado-item-title">Contacter nous</a>
 								</li>	
                                 
 							</ul>

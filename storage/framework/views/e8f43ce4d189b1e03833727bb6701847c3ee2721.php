@@ -116,6 +116,10 @@
 										</li> 
 
 										<li class="menu-item">
+											<a title="Contact Messages"href="<?php echo e(route('admin.contact')); ?>">Contact Messages</a>
+										</li> 
+
+										<li class="menu-item">
 											<a href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
 										</li>
 										
@@ -167,15 +171,15 @@
 						<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('header-search-component')->html();
-} elseif ($_instance->childHasBeenRendered('AwNZpyP')) {
-    $componentId = $_instance->getRenderedChildComponentId('AwNZpyP');
-    $componentTag = $_instance->getRenderedChildComponentTagName('AwNZpyP');
+} elseif ($_instance->childHasBeenRendered('dogFfL5')) {
+    $componentId = $_instance->getRenderedChildComponentId('dogFfL5');
+    $componentTag = $_instance->getRenderedChildComponentTagName('dogFfL5');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('AwNZpyP');
+    $_instance->preserveRenderedChild('dogFfL5');
 } else {
     $response = \Livewire\Livewire::mount('header-search-component');
     $html = $response->html();
-    $_instance->logRenderedChild('AwNZpyP', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('dogFfL5', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -184,15 +188,15 @@ echo $html;
 							<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('wishlist-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('R9tjNoJ')) {
-    $componentId = $_instance->getRenderedChildComponentId('R9tjNoJ');
-    $componentTag = $_instance->getRenderedChildComponentTagName('R9tjNoJ');
+} elseif ($_instance->childHasBeenRendered('WToShT1')) {
+    $componentId = $_instance->getRenderedChildComponentId('WToShT1');
+    $componentTag = $_instance->getRenderedChildComponentTagName('WToShT1');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('R9tjNoJ');
+    $_instance->preserveRenderedChild('WToShT1');
 } else {
     $response = \Livewire\Livewire::mount('wishlist-count-component');
     $html = $response->html();
-    $_instance->logRenderedChild('R9tjNoJ', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('WToShT1', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -200,15 +204,15 @@ echo $html;
 							<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('cart-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('IOYyZtC')) {
-    $componentId = $_instance->getRenderedChildComponentId('IOYyZtC');
-    $componentTag = $_instance->getRenderedChildComponentTagName('IOYyZtC');
+} elseif ($_instance->childHasBeenRendered('R2rcLmW')) {
+    $componentId = $_instance->getRenderedChildComponentId('R2rcLmW');
+    $componentTag = $_instance->getRenderedChildComponentTagName('R2rcLmW');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('IOYyZtC');
+    $_instance->preserveRenderedChild('R2rcLmW');
 } else {
     $response = \Livewire\Livewire::mount('cart-count-component');
     $html = $response->html();
-    $_instance->logRenderedChild('IOYyZtC', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('R2rcLmW', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -257,7 +261,7 @@ echo $html;
 									<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
 								</li>
 								<li class="menu-item">
-									<a href="contact-us.html" class="link-term mercado-item-title">Contacter nous</a>
+									<a href="/contact-us" class="link-term mercado-item-title">Contacter nous</a>
 								</li>	
                                 
 							</ul>
