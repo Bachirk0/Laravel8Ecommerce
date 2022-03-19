@@ -65,7 +65,7 @@ if (isset($__messageOriginal)) { $message = $__messageOriginal; }
 endif;
 unset($__errorArgs, $__bag); ?>
 
-									<button type="submit" class="btn btn-primary">Valider</button>
+									<input type="submit" name="ok" value="Submit">
 									
 								</form>
 							</div>

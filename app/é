@@ -1,0 +1,8 @@
+postgres://gfpedsyblrxitm:771a1ce3c2c994fdc465bf98d54992c58f5221e1d6c363d12003ced499519957@ec2-44-194-167-63.compute-1.amazonaws.com:5432/dv7jmb5917dgt
+
+
+user: gfpedsyblrxitm
+pass: 771a1ce3c2c994fdc465bf98d54992c58f5221e1d6c363d12003ced499519957
+host: ec2-44-194-167-63.compute-1.amazonaws.com
+port: 5432
+db: dv7jmb5917dgt
