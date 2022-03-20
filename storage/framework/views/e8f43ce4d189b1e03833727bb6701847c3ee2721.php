@@ -10,14 +10,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/animate.css')); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/font-awesome.min.css')); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/bootstrap.min.css')); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/owl.carousel.min.css')); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/flexslider.css')); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/chosen.min.css')); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/style.css')); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/color-01.css')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(secure_asset('assets/css/animate.css')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(secure_asset('assets/css/font-awesome.min.css')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(secure_asset('assets/css/bootstrap.min.css')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(secure_asset('assets/css/owl.carousel.min.css')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(secure_asset('assets/css/flexslider.css')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(secure_asset('assets/css/chosen.min.css')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(secure_asset('assets/css/style.css')); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo e(secure_asset('assets/css/color-01.css')); ?>">
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -59,10 +59,10 @@
 								<li class="menu-item lang-menu menu-item-has-children parent">
 									<a title="English" href="#"><span class="img label-before"><img src="assets/images/lang-en.png" alt="lang-en"></span>Français<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu lang" >
-										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="<?php echo e(asset('assets/images/lang-hun.png')); ?>" alt="lang-hun"></span>Hungary</a></li>
-										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="<?php echo e(asset('assets/images/lang-ger.png')); ?>" alt="lang-ger" ></span>German</a></li>
-										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="<?php echo e(asset('assets/images/lang-fra.png')); ?>" alt="lang-fre"></span>French</a></li>
-										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="<?php echo e(asset('assets/images/lang-can.png')); ?>" alt="lang-can"></span>Canada</a></li>
+										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="<?php echo e(secure_asset('assets/images/lang-hun.png')); ?>" alt="lang-hun"></span>Hungary</a></li>
+										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="<?php echo e(secure_asset('assets/images/lang-ger.png')); ?>" alt="lang-ger" ></span>German</a></li>
+										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="<?php echo e(secure_asset('assets/images/lang-fra.png')); ?>" alt="lang-fre"></span>French</a></li>
+										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="<?php echo e(secure_asset('assets/images/lang-can.png')); ?>" alt="lang-can"></span>Canada</a></li>
 									</ul>
 								</li>
 								<li class="menu-item menu-item-has-children parent" >
@@ -165,21 +165,21 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="index.html" class="link-to-home"><img src="<?php echo e(asset('assets/images/fany.png')); ?>    " alt="mercado"></a>
+							<a href="index.html" class="link-to-home"><img src="<?php echo e(secure_asset('assets/images/fany.png')); ?>    " alt="mercado"></a>
 						</div>
 
 						<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('header-search-component')->html();
-} elseif ($_instance->childHasBeenRendered('dogFfL5')) {
-    $componentId = $_instance->getRenderedChildComponentId('dogFfL5');
-    $componentTag = $_instance->getRenderedChildComponentTagName('dogFfL5');
+} elseif ($_instance->childHasBeenRendered('xxq2CbC')) {
+    $componentId = $_instance->getRenderedChildComponentId('xxq2CbC');
+    $componentTag = $_instance->getRenderedChildComponentTagName('xxq2CbC');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('dogFfL5');
+    $_instance->preserveRenderedChild('xxq2CbC');
 } else {
     $response = \Livewire\Livewire::mount('header-search-component');
     $html = $response->html();
-    $_instance->logRenderedChild('dogFfL5', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('xxq2CbC', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -188,15 +188,15 @@ echo $html;
 							<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('wishlist-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('WToShT1')) {
-    $componentId = $_instance->getRenderedChildComponentId('WToShT1');
-    $componentTag = $_instance->getRenderedChildComponentTagName('WToShT1');
+} elseif ($_instance->childHasBeenRendered('kQUEOSK')) {
+    $componentId = $_instance->getRenderedChildComponentId('kQUEOSK');
+    $componentTag = $_instance->getRenderedChildComponentTagName('kQUEOSK');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('WToShT1');
+    $_instance->preserveRenderedChild('kQUEOSK');
 } else {
     $response = \Livewire\Livewire::mount('wishlist-count-component');
     $html = $response->html();
-    $_instance->logRenderedChild('WToShT1', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('kQUEOSK', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -204,15 +204,15 @@ echo $html;
 							<?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('cart-count-component')->html();
-} elseif ($_instance->childHasBeenRendered('R2rcLmW')) {
-    $componentId = $_instance->getRenderedChildComponentId('R2rcLmW');
-    $componentTag = $_instance->getRenderedChildComponentTagName('R2rcLmW');
+} elseif ($_instance->childHasBeenRendered('B2ryYbj')) {
+    $componentId = $_instance->getRenderedChildComponentId('B2ryYbj');
+    $componentTag = $_instance->getRenderedChildComponentTagName('B2ryYbj');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('R2rcLmW');
+    $_instance->preserveRenderedChild('B2ryYbj');
 } else {
     $response = \Livewire\Livewire::mount('cart-count-component');
     $html = $response->html();
-    $_instance->logRenderedChild('R2rcLmW', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('B2ryYbj', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -481,14 +481,14 @@ echo $html;
 		</div>
 	</footer>
 	
-	<script src="<?php echo e(asset('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')); ?>"></script>
-	<script src="<?php echo e(asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')); ?>"></script>
-	<script src="<?php echo e(asset('assets/js/bootstrap.min.js')); ?>"></script>
-	<script src="<?php echo e(asset('assets/js/jquery.flexslider.js')); ?>"></script>
-	<script src="<?php echo e(asset('assets/js/owl.carousel.min.js')); ?>"></script>
-	<script src="<?php echo e(asset('assets/js/jquery.countdown.min.js')); ?>"></script>
-	<script src="<?php echo e(asset('assets/js/jquery.sticky.js')); ?>"></script>
-	<script src="<?php echo e(asset('assets/js/functions.js')); ?>"></script>
+	<script src="<?php echo e(secure_asset('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')); ?>"></script>
+	<script src="<?php echo e(secure_asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')); ?>"></script>
+	<script src="<?php echo e(secure_asset('assets/js/bootstrap.min.js')); ?>"></script>
+	<script src="<?php echo e(secure_asset('assets/js/jquery.flexslider.js')); ?>"></script>
+	<script src="<?php echo e(secure_asset('assets/js/owl.carousel.min.js')); ?>"></script>
+	<script src="<?php echo e(secure_asset('assets/js/jquery.countdown.min.js')); ?>"></script>
+	<script src="<?php echo e(secure_asset('assets/js/jquery.sticky.js')); ?>"></script>
+	<script src="<?php echo e(secure_asset('assets/js/functions.js')); ?>"></script>
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
