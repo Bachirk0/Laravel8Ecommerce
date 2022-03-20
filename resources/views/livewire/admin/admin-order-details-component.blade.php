@@ -57,7 +57,7 @@
                             @foreach($order->orderItems as $item)
                             <li class="pr-cart-item">
                                 <div class="product-image">
-                                    <figure><img src="{{asset('assets/images/products')}}/{{$item->product->image}}" alt="{{$item->product->name}}"></figure>
+                                    <figure><img src="{{secure_asset('assets/images/products')}}/{{$item->product->image}}" alt="{{$item->product->name}}"></figure>
                                 </div>
                                 <div class="product-name">
                                     <a class="link-to-product" href="{{route('product.details', ['slug'=>$item->product->slug])}}">{{$item->product->name}}</a>
