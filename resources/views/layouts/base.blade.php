@@ -10,14 +10,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/animate.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/font-awesome.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/owl.carousel.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/flexslider.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/chosen.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/color-01.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/animate.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/flexslider.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/chosen.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/css/color-01.css')}}">
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -58,10 +58,10 @@
 								<li class="menu-item lang-menu menu-item-has-children parent">
 									<a title="English" href="#"><span class="img label-before"><img src="assets/images/lang-en.png" alt="lang-en"></span>Français<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu lang" >
-										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-hun.png')}}" alt="lang-hun"></span>Hungary</a></li>
-										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-ger.png')}}" alt="lang-ger" ></span>German</a></li>
-										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-fra.png')}}" alt="lang-fre"></span>French</a></li>
-										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="{{asset('assets/images/lang-can.png')}}" alt="lang-can"></span>Canada</a></li>
+										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="{{secure_asset('assets/images/lang-hun.png')}}" alt="lang-hun"></span>Hungary</a></li>
+										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="{{secure_asset('assets/images/lang-ger.png')}}" alt="lang-ger" ></span>German</a></li>
+										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="{{secure_asset('assets/images/lang-fra.png')}}" alt="lang-fre"></span>French</a></li>
+										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="{{secure_asset('assets/images/lang-can.png')}}" alt="lang-can"></span>Canada</a></li>
 									</ul>
 								</li>
 								<li class="menu-item menu-item-has-children parent" >
@@ -164,7 +164,7 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="index.html" class="link-to-home"><img src="{{asset('assets/images/fany.png')}}    " alt="mercado"></a>
+							<a href="index.html" class="link-to-home"><img src="{{secure_asset('assets/images/fany.png')}}    " alt="mercado"></a>
 						</div>
 
 						@livewire('header-search-component')
