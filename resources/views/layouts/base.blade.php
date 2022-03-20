@@ -85,41 +85,41 @@
 									<a title="My acount" href="#">Mon compte ({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu curency" >
 										<li class="menu-item" >
-											<a title="Dashboard" href="{{secure_route('admin.dashboard')}}">Tableau de bord</a>
+											<a title="Dashboard" href="{{route('admin.dashboard')}}">Tableau de bord</a>
 										</li>
 										<li class="menu-item" >   
-											<a title="Categories" href="{{secure_route('admin.categories')}}">Categories</a>
+											<a title="Categories" href="{{route('admin.categories')}}">Categories</a>
 										</li>
                                         <li class="menu-item">
-											<a href="{{secure_route('admin.products')}}">Produits</a>
+											<a href="{{route('admin.products')}}">Produits</a>
 										</li>
 
 										<li class="menu-item">
-											<a title="Manage Home Slide"href="{{secure_route('admin.homeslider')}}">Slides</a>
+											<a title="Manage Home Slide"href="{{route('admin.homeslider')}}">Slides</a>
 										</li>
 
 										<li class="menu-item">
-											<a title="Manage Home Categories"href="{{secure_route('admin.homecategories')}}">Categories accueil</a>
+											<a title="Manage Home Categories"href="{{route('admin.homecategories')}}">Categories accueil</a>
 										</li>
 
 										<li class="menu-item">
-											<a title="Sale Setting"href="{{secure_route('admin.sale')}}">Mise en vente</a>
+											<a title="Sale Setting"href="{{route('admin.sale')}}">Mise en vente</a>
 										</li> 
 
 										<li class="menu-item">
-											<a title="All coupon"href="{{secure_route('admin.coupons')}}">Coupons</a>
+											<a title="All coupon"href="{{route('admin.coupons')}}">Coupons</a>
 										</li> 
 
 										<li class="menu-item">
-											<a title="All Orders"href="{{secure_route('admin.orders')}}">Commandes</a>
+											<a title="All Orders"href="{{route('admin.orders')}}">Commandes</a>
 										</li> 
 
 										<li class="menu-item">
-											<a title="Contact Messages"href="{{secure_route('admin.contact')}}">Contact Messages</a>
+											<a title="Contact Messages"href="{{route('admin.contact')}}">Contact Messages</a>
 										</li> 
 
 										<li class="menu-item">
-											<a href="{{secure_route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
+											<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
 										</li>
 										
 										
@@ -133,16 +133,16 @@
 									<a title="My acount" href="#">Mon compte ({{Auth::user()->name}})<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu curency" >
 										<li class="menu-item" >
-											<a title="Dashboard" href="{{secure_route('user.dashboard')}}">Tableau de bord</a>
+											<a title="Dashboard" href="{{route('user.dashboard')}}">Tableau de bord</a>
 										</li>
 										<li class="menu-item" >
-											<a title="My orders" href="{{secure_route('user.orders')}}">Ma commande</a>
+											<a title="My orders" href="{{route('user.orders')}}">Ma commande</a>
 										</li>
 										<li class="menu-item" >
-											<a title="My orders" href="{{secure_route('user.changepassword')}}">Changer de Mot de Passe</a>
+											<a title="My orders" href="{{route('user.changepassword')}}">Changer de Mot de Passe</a>
 										</li>
 										<li class="menu-item">
-											<a href="{{secure_route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
+											<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Deconnexion</a>
 										</li>
 										<form id="logout-form" method="POST" action="{{('logout')}}">
 											@csrf
@@ -151,8 +151,8 @@
 								</li>
                                 @endif 
                                 @else
-                                <li class="menu-item" ><a title="Register or Login" href="{{secure_route('login')}}">Connexion</a></li>
-								<li class="menu-item" ><a title="Register or Login" href="{{secure_route('register')}}">S'inscrire</a></li>
+                                <li class="menu-item" ><a title="Register or Login" href="{{route('login')}}">Connexion</a></li>
+								<li class="menu-item" ><a title="Register or Login" href="{{route('register')}}">S'inscrire</a></li>
                                 @endif           
                                 @endif 
 							</ul>
